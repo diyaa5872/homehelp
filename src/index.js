@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Main from "./Components/Main";
+import Profileuser from "./Components/Profileuser";
 
-ReactDOM.render(<Main />,document.getElementById("root"));
+ReactDOM.render(<Profileuser />,document.getElementById("root"));

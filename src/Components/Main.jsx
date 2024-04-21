@@ -16,6 +16,7 @@ const Main = () => {
                 .container {
                     font-family: Arial, sans-serif;
                     background: #F7418F;
+                    position: relative; /* Added position relative */
                 }
                 
                 .upper-block {
@@ -32,6 +33,7 @@ const Main = () => {
                 
                 .upper-block-content {
                     margin-bottom: 20px;
+                    margin-up: 20px
                 }
                 
                 .header-title {
@@ -104,20 +106,21 @@ const Main = () => {
                     margin-bottom: 10px;
                 }
                 
-                
-                /* Media query for responsiveness */
-                @media screen and (max-width: 768px) {
-                    .search-container {
-                        width: 90%; /* Adjusted width for smaller screens */
-                    }
-                    
-                    @media screen and (max-width: 768px) {
-                        .service {
-                            width: calc(50% - 20px); /* Adjusted width for two items per row */
-                        }
-                    }
+                /* New styles for circular block */
+                .circle-block {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: white;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
                 }
-                
                 `}
             </style>
             <div className="upper-block">
@@ -139,6 +142,12 @@ const Main = () => {
                 <ServiceCard icon={wallRepairsIcon} title="Wall Repairs" />
                 <ServiceCard icon={painterIcon} title="Painter" />
             </div>
+            {/* Circular block */}
+            <div className="circle-block" onClick={() => handleClick()}>
+                {/* You can put any content here, like an arrow icon */}
+                {/* For example: <img src="arrow.png" alt="Go to other page" /> */}
+                <span>&#8594;</span>
+            </div>
         </div>
     );
 }
@@ -152,5 +161,9 @@ const ServiceCard = ({ icon, title }) => {
     );
 }
 
-export default Main;
+// Function to handle click on the circular block
+const handleClick = () => {
+    // Navigate to the other page here
+}
 
+export default Main;
