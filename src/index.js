@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Profileuser from "./Components/Profileuser";
+import Login from "./Components/Login";
 
-ReactDOM.render(<Profileuser />,document.getElementById("root"));
+ReactDOM.render(<Login />,document.getElementById("root"));

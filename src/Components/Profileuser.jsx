@@ -38,7 +38,7 @@ const Registerworker = () => {
                     display: flex;
                     align-items: center;
                     padding-left: 20px;
-                    padding-top:100px;
+                    padding-top:200px;
                 }
                 
                 .profile-section {
@@ -76,8 +76,8 @@ const Registerworker = () => {
                 .menu-box {
                     height: 20%;
                     width: 100%;
-                    padding-top:100px;
-                    padding-bottom: 400px;
+                    padding-top:250px;
+                    padding-bottom: 300px;
                 }
                 
                 .menu-section {
@@ -95,7 +95,7 @@ const Registerworker = () => {
                     background: #FFBB70;
                     color: white;
                     border-radius: 20px;
-                    margin-bottom:4px;
+                    margin-bottom:20px;
                     padding: 0 20px;
                     padding: 40px;
                 }
@@ -129,6 +129,7 @@ const Registerworker = () => {
                     border-radius: 5px;
                     cursor: pointer;
                     font-size: 55px;
+                    border-radius:  20px;
                 }
                 `}
             </style>
